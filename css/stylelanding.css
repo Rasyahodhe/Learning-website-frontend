@@ -134,14 +134,19 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 @font-face {
     font-family: alex;
     src: url(font/BebasNeue-Regular.woff)format(woff);
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     gap: 2vmax;
+}
+body{
+    height: 1800px;
 }
 /*=================================================== Setting Navbar ======================================== */
 .navbar {
@@ -151,7 +156,7 @@ table {
     background-color: yellow;
     font-size: 1.8em;
     font-family: alex;
-    border-bottom-right-radius:20%;
+    border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
     overflow: hidden;
     box-shadow: 0px 6px 5px rgba(0, 0, 0, .2);
@@ -163,6 +168,7 @@ table {
     text-align: center;
     transition: 1s;
 }
+
 .navbar li a {
     text-decoration: none;
     font-weight: bold;
@@ -172,7 +178,55 @@ table {
 .navbar li:hover {
     background-color: black;
 }
+
 .navbar li:hover a {
     color: yellow;
 }
 
+/* =================================Setting Head====================== */
+.head {
+    display: flex;
+    gap: 1vmax;
+}
+.head .headgambar{
+
+    position: relative;
+}
+.head .headgambar span.warna1 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(255, 255, 0,0.3);
+    transition: 1s;
+    border-bottom-right-radius: 50%;
+    z-index: -999;
+}
+
+.head .headgambar:hover span.warna1 {
+    width: 200px;
+    height: 200px;
+}
+
+.head .headgambar span.warna2 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 128, 0,0.3);
+    transition: 1s;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 20%;
+  
+}
+
+.head .headgambar:hover span.warna2 {
+    width: 200px;
+    height: 200px;
+}
+
+.head .headgambar img {
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    box-shadow: 0px 10px 5px rgba(119, 118, 118, 0.4);
+}
