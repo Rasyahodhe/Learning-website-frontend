@@ -138,7 +138,12 @@ table {
     font-family: alex;
     src: url(font/BebasNeue-Regular.woff)format(woff);
 }
-/* Setting Navbar */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+}
+/*=================================================== Setting Navbar ======================================== */
 .navbar {
     height: 2vmax;
     display: flex;
@@ -149,13 +154,14 @@ table {
     border-bottom-right-radius:20%;
     border-bottom-left-radius: 20%;
     overflow: hidden;
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, .2);
 }
 
 .navbar li {
     width: 25%;
     line-height: 2vmax;
     text-align: center;
-    transition: .5s;
+    transition: 1s;
 }
 .navbar li a {
     text-decoration: none;
@@ -169,3 +175,4 @@ table {
 .navbar li:hover a {
     color: yellow;
 }
+
