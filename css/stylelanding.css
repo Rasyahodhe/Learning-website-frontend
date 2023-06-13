@@ -139,6 +139,10 @@ table {
     font-family: alex;
     src: url(font/BebasNeue-Regular.woff)format(woff);
 }
+@font-face{
+    font-family: poppins;
+    
+}
 
 .container {
     display: flex;
@@ -191,6 +195,7 @@ body {
 
 /* =================================Setting Head====================== */
 .head {
+    position: relative;
     display: flex;
     gap: 1vmax;
     background: rgb(9, 9, 121);
@@ -234,19 +239,44 @@ body {
     z-index: 2;
 
 }
-
 .head .headisi {
+    position: relative;
     width: 70%;
-    background-image: url(../foto/unduhan.jpeg);
-    opacity: .6;
     background-position: center;
     background-size: cover;
-    border-bottom-right-radius: 20%;
-}
-
-.head .headisi:hover {
-    background-color: rgba(0, 0, 0, 1);
+   
 }
 .head .headisi h1,p{
+    position: absolute;
     color:white;
+}
+.head .headisi h1{
+    z-index: 999;
+    bottom: 50%;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    font-size: 5vmax;
+    text-shadow: 3px 3px 1px rgb(0, 204, 255),-3px -3px 1px rgb(0, 0, 0);
+    transition: 1s;
+}
+.head .headisi h1:hover{
+    text-shadow: 3px 3px 1px  rgb(0, 0, 0),-3px -3px 1px rgb(0, 204, 255);
+}
+.head .headisi p{
+    z-index: 999;
+    bottom: 50%;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    font-size: 1vmax;
+}
+
+.head .headisi span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../foto/unduhan.jpeg);
+    border-bottom-right-radius: 20%;
+    opacity: 0.5;
 }
