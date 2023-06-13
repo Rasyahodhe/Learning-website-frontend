@@ -196,6 +196,7 @@ body {
     background: rgb(9, 9, 121);
     background: linear-gradient(41deg, rgba(9, 9, 121, 1) 13%, rgba(255, 0, 214, 1) 52%, rgba(76, 233, 234, 1) 60%, rgba(2, 0, 36, 1) 78%);
     height: 30vmax;
+    border-bottom-right-radius: 8vmax ;
 }
 
 .head .headgambar {
@@ -207,6 +208,7 @@ body {
     box-shadow: 0px 10px 5px rgba(119, 118, 118, 0.4);
     justify-content: center;
     align-items: center;
+    
 }
 
 .head .headgambar span.warna1 {
@@ -236,6 +238,7 @@ body {
 .head .headisi {
     width: 70%;
     background-image: url(../foto/unduhan.jpeg);
+    opacity: .6;
     background-position: center;
     background-size: cover;
     border-bottom-right-radius: 20%;
@@ -243,4 +246,7 @@ body {
 
 .head .headisi:hover {
     background-color: rgba(0, 0, 0, 1);
+}
+.head .headisi h1,p{
+    color:white;
 }
