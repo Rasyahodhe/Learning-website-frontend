@@ -253,6 +253,7 @@ body {
 p {
     position: absolute;
     color: white;
+    font-family: poppins;
 }
 
 .head .headisi h1 {
