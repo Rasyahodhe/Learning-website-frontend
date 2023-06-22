@@ -239,7 +239,7 @@ body {
     border-bottom-right-radius: 20%;
     border-top-right-radius: 20%;
     z-index: 2;
-    
+
 }
 
 .head .headisi {
@@ -288,4 +288,28 @@ p {
     background-image: url(../foto/unduhan.jpeg);
     border-bottom-right-radius: 20%;
     opacity: 0.5;
+}
+
+
+/*Setting conten */
+.content ul.content-isi {
+    display: flex;
+    gap: 20vmax;
+    justify-content: center;
+}
+
+.content ul.content-isi li {
+    width: 100px;
+}
+
+.content .content-isi li img,
+p {
+    width: 300px;
+    text-align: justify;
+    transition: 0.5s;
+}
+
+.content .content-isi li:hover img,
+p {
+    border-radius: 40%;
 }
