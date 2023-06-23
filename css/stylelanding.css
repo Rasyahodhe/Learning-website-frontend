@@ -294,7 +294,8 @@ p {
 /*Setting conten */
 .content ul.content-isi {
     display: flex;
-    gap: 20vmax;
+    flex-wrap: wrap;
+    gap: 15vmax;
     justify-content: center;
 }
 
@@ -304,12 +305,13 @@ p {
 
 .content .content-isi li img,
 p {
-    width: 300px;
+    width: 20vmax;
     text-align: justify;
     transition: 0.5s;
 }
 
 .content .content-isi li:hover img,
 p {
-    border-radius: 40%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
 }
