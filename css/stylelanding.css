@@ -153,8 +153,8 @@ table {
 
 body {
     height: 1800px;
-    background: rgb(121, 9, 103);
-    background: linear-gradient(294deg, rgba(121, 9, 103, 1) 13%, rgba(2, 0, 36, 1) 40%);
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(294deg, rgba(121, 9, 103, 1) 13%, rgba(2, 0, 36, 1) 40%); */
 }
 
 /*=================================================== Setting Navbar ======================================== */
