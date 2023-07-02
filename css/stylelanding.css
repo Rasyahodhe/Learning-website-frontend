@@ -292,11 +292,20 @@ p {
 
 
 /*Setting conten */
-.content ul.content-isi {
+.content {
     display: flex;
-    flex-wrap: wrap;
-    gap: 15vmax;
     justify-content: center;
+    position: relative;
+    overflow-x: scroll;
+    height: 25vmax;
+    width: 90vmax;
+
+}
+
+.content ul.content-isi {
+    width: 100%;
+    display: flex;
+    gap: 15vmax;
 }
 
 .content ul.content-isi li {
@@ -308,6 +317,7 @@ p {
     width: 20vmax;
     text-align: justify;
     transition: 0.5s;
+    font-size: 1vmax;
 }
 
 .content .content-isi li:hover img,
