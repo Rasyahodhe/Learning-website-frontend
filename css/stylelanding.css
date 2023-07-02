@@ -235,11 +235,21 @@ body {
 }
 
 .head .headgambar img {
-    width: 100%;
     border-bottom-right-radius: 20%;
     border-top-right-radius: 20%;
     z-index: 2;
+    animation-name: perbesar;
+    animation-duration: 2s;
+}
 
+@keyframes perbesar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .head .headisi {
