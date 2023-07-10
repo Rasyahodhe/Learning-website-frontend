@@ -169,7 +169,7 @@ table {
 
 .container .head .navinfo ul {
     display: flex;
-    gap: 2vmax;
+    gap: 0.1vmax;
     font-size: 2vmax;
     font-family: bebas;
     justify-content: center;
@@ -177,13 +177,17 @@ table {
 }
 
 .container .head .navinfo ul li a {
+    position: relative;
     text-decoration: none;
 }
 
 .container .head .navinfo ul li {
     text-align: center;
     width: 8vmax;
+    border: 1px solid black;
 }
+
+
 
 
 .container .head .navinfo h1,
