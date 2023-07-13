@@ -166,6 +166,14 @@ body {
     width: 30vmax;
     border-radius: 20% 2% 5% 5%;
     box-shadow: 0.8vmax 0.5vmax 0.8vmax rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+
+.container .head img:hover {
+    width: 32vmax;
+    border-radius: 20% 2% 5% 5%;
+    box-shadow: 0.8vmax 0.5vmax 0.8vmax rgba(0, 0, 0, 0.3);
+
 }
 
 /* setting bagian head sebelah kanan navigasi */
