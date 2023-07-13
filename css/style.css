@@ -167,6 +167,7 @@ body {
     border-radius: 20% 2% 5% 5%;
     box-shadow: 0.8vmax 0.5vmax 0.8vmax rgba(0, 0, 0, 0.3);
     transition: 1s;
+    z-index: 9999;
 }
 
 .container .head img:hover {
@@ -230,12 +231,32 @@ body {
 .container .head .navinfo h1,
 p {
     padding: 0 4vmax;
+
 }
 
 .container .head .navinfo h1 {
     margin-top: 10vmax;
     font-family: poppins;
     font-size: 3vmax;
+    animation-name: gesermasuk;
+    animation-duration: 2s;
+}
+
+
+
+/* Animasi untuk komponen html */
+@keyframes gesermasuk {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    50% {
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 /* Responsif */
