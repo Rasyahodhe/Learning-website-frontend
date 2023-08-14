@@ -251,7 +251,26 @@ p {
     animation-duration: 2s;
 }
 
+/* Setting Menu */
+.container .menu {
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+}
 
+.container .menu .cardflow {
+    width: 70%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.container .menu .menuheader {
+    width: 30%;
+    height: 100px;
+    border: 1px solid black;
+}
 
 /* Animasi untuk komponen html */
 @keyframes gesermasuk {
