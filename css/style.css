@@ -260,17 +260,32 @@ p {
     align-items: center;
 }
 
-.container .menu .cardflow {
-    width: 70%;
-    height: 100px;
+.container .menu .menuheader {
+    width: 30%;
     border: 1px solid black;
 }
 
-.container .menu .menuheader {
-    width: 30%;
-    height: 100px;
+.container .menu .cardflow {
+    width: 70%;
     border: 1px solid black;
 }
+
+.container .menu .cardflow ul {
+    display: flex;
+    height: 20vmax;
+    align-items: center;
+}
+
+.container .menu .cardflow ul li {
+    border: 1px solid black;
+    height: 18vmax;
+    width: 15vmax;
+    border-radius: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 
 /* Animasi untuk komponen html */
 @keyframes gesermasuk {
