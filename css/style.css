@@ -266,16 +266,20 @@ table {
 }
 
 .container .menu .cardflow {
+    display: flex;
+    align-items: end;
     width: 70%;
+    height: 26vmax;
     overflow-x: scroll;
+
 }
 
 .container .menu .cardflow ul {
     display: flex;
+    margin: bottom;
     gap: 0.2vmax;
     height: 20vmax;
     width: 100vmax;
-    align-items: center;
 }
 
 .container .menu .cardflow ul li {
@@ -286,6 +290,12 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    transition: .5s;
+}
+
+.container .menu .cardflow ul li:hover {
+    margin-top: -4vmax;
+    z-index: 999;
 }
 
 .container .menu .cardflow ul li h2,
@@ -302,6 +312,8 @@ table {
     font-size: 1vmax;
     font-family: fantasy;
 }
+
+
 
 /* Animasi untuk komponen html */
 @keyframes gesermasuk {
