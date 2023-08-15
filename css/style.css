@@ -238,7 +238,7 @@ table {
 
 
 .container .head .navinfo h1,
-p {
+.tekshead {
     padding: 0 4vmax;
 
 }
@@ -267,18 +267,20 @@ p {
 
 .container .menu .cardflow {
     width: 70%;
-    border: 1px solid black;
+    overflow-x: scroll;
 }
 
 .container .menu .cardflow ul {
     display: flex;
+    gap: 0.2vmax;
     height: 20vmax;
+    width: 100vmax;
     align-items: center;
 }
 
 .container .menu .cardflow ul li {
     border: 1px solid black;
-    height: 18vmax;
+    height: 19vmax;
     width: 15vmax;
     border-radius: 10% 5%;
     display: flex;
@@ -286,6 +288,20 @@ p {
     justify-content: end;
 }
 
+.container .menu .cardflow ul li h2,
+.teksmenu {
+    margin: .5vmax 1vmax;
+}
+
+.container .menu .cardflow ul li h2 {
+    font-size: .7vmax;
+    font-family: cursive;
+}
+
+.container .menu .cardflow ul li .teksmenu {
+    font-size: 1vmax;
+    font-family: fantasy;
+}
 
 /* Animasi untuk komponen html */
 @keyframes gesermasuk {
