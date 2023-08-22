@@ -254,10 +254,11 @@ table {
 /* Setting Menu */
 .container .menu {
     display: flex;
-    border: 1px solid black;
+    background-color: rgb(251, 255, 0);
     width: 100%;
     height: 600px;
     align-items: center;
+    border-top-right-radius: 5%;
 }
 
 .container .menu .menuheader {
@@ -271,7 +272,9 @@ table {
     width: 70%;
     height: 26vmax;
     overflow-x: scroll;
-
+    margin-right: 1vmax;
+    background-color: gray;
+    border-radius: 5% 5%;
 }
 
 .container .menu .cardflow ul {
