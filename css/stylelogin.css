@@ -12,19 +12,32 @@
 .logintampilan {
     position: relative;
     height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 9999;
 }
 
 .posisi {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 500px;
     height: 300px;
     background-color: rgb(0, 0, 0);
     gap: 2vmax;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-top-right-radius: 10%;
     border-bottom-left-radius: 10%;
@@ -45,8 +58,13 @@
 
 .posisi .inputan {
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: .5vmax;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -66,7 +84,12 @@ input {
 
 /* bagian span */
 span {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 12vmax;
     position: absolute;
@@ -79,9 +102,13 @@ span .red {
     width: 50px;
     height: 50px;
     background-color: red;
+    -webkit-animation-name: redanimation;
     animation-name: redanimation;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
+    -webkit-animation-duration: 5s;
     animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
@@ -89,9 +116,13 @@ span .yellow {
     width: 50px;
     height: 50px;
     background-color: yellow;
+    -webkit-animation-name: redanimation;
     animation-name: redanimation;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
+    -webkit-animation-duration: 3s;
     animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 
 }
@@ -100,9 +131,13 @@ span .blue {
     width: 50px;
     height: 50px;
     background-color: blue;
+    -webkit-animation-name: redanimation;
     animation-name: redanimation;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
+    -webkit-animation-duration: 4s;
     animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
@@ -110,14 +145,20 @@ span .green {
     width: 50px;
     height: 50px;
     background-color: green;
+    -webkit-animation-name: redanimation;
     animation-name: redanimation;
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
+    -webkit-animation-duration: 7s;
     animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
 /* Seting tombol */
 .logintampilan .posisi .tombol {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 7vmax;
 }
@@ -132,6 +173,35 @@ span .green {
 
 
 /* Tempat animasi */
+@-webkit-keyframes redanimation {
+    0% {
+        margin-left: 100px;
+    }
+
+    25% {
+        margin-left: 75%;
+        border-radius: 50%;
+    }
+
+    50% {
+        margin-left: 50%;
+        border-bottom-left-radius: 20%;
+        border-end-end-radius: 20%;
+    }
+
+    75% {
+        margin-left: 25%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+
+}
+
+
+
+
 @keyframes redanimation {
     0% {
         margin-left: 100px;
@@ -158,7 +228,7 @@ span .green {
 
 }
 
-.logintampilan .tombol button{
+.logintampilan .tombol button {
     border-top-left-radius: 30%;
     border-bottom-right-radius: 20%;
 }

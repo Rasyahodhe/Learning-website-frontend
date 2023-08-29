@@ -144,8 +144,10 @@ table {
 /* Atur Tampilan */
 
 .container {
-    height: 400px;
-
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    width: 100%;
 }
 
 .container .head {
@@ -163,6 +165,7 @@ table {
     width: 30vmax;
     border-radius: 20% 2% 5% 5%;
     box-shadow: 0.8vmax 0.5vmax 0.8vmax rgba(0, 0, 0, 0.3);
+    -webkit-transition: 1s;
     transition: 1s;
     z-index: 9999;
 }
@@ -247,37 +250,68 @@ table {
     margin-top: 10vmax;
     font-family: poppins;
     font-size: 3vmax;
+    -webkit-animation-name: gesermasuk;
     animation-name: gesermasuk;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
 
 /* Setting Menu */
 .container .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: rgb(251, 255, 0);
     width: 100%;
-    height: 600px;
+    height: 25vmax;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-top-right-radius: 5%;
 }
 
+/* Menu > Menu Header  */
 .container .menu .menuheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 30%;
-    border: 1px solid black;
+    height: 25vmax;
 }
 
+.container .menu .menuheader .menuheadertitle {
+    color: black;
+    font-size: 10vmax;
+}
+
+.container .menu .menuheader p {
+    font-size: .8vmax;
+}
+
+.container .menu .menuheader .menuheadertitle,
+p {
+    padding: 1vmax;
+}
+
+
 .container .menu .cardflow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: end;
     width: 70%;
     height: 26vmax;
     overflow-x: scroll;
     margin-right: 1vmax;
-    background-color: rgb(0, 0, 0);
     border-radius: 5% 5%;
 }
 
 .container .menu .cardflow ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: bottom;
     gap: 0.2vmax;
@@ -293,9 +327,17 @@ table {
     height: 19vmax;
     width: 15vmax;
     border-radius: 10% 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: end;
+    -webkit-transition: .5s;
     transition: .5s;
 
 }
@@ -322,21 +364,118 @@ h2 {
     color: white;
 }
 
+/* Setting pada Card */
+.container .card {
+    position: relative;
+    width: 100%;
+    height: 30vmax;
+    border: 1px solid black;
+}
 
+.container .card span {
+    position: absolute;
+    z-index: -999;
+    width: 100%;
+    height: 26vmax;
+}
+
+.container .card span .anim1 {
+    width: 5%;
+    height: 20%;
+    background-color: black;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.container .card .setcard {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    gap: 10vmax;
+    margin: auto;
+    width: 80%;
+    height: 25vmax;
+    padding: .7vmax;
+    justify-content: center;
+}
+
+.container .card .setcard li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 15vmax;
+    border: 1px solid black;
+
+}
+
+.container .card .setcard li h3 {
+    font-size: 3vmax;
+}
+
+.container .card .setcard li h3,
+p {
+    padding: 1vmax;
+}
 
 /* Animasi untuk komponen html */
-@keyframes gesermasuk {
+@-webkit-keyframes gesermasuk {
     0% {
+        -webkit-transform: translateX(-200px);
         transform: translateX(-200px);
     }
 
     50% {
+        -webkit-transform: translateX(200px);
         transform: translateX(200px);
     }
 
     100% {
+        -webkit-transform: translateX(0px);
         transform: translateX(0px);
     }
+}
+
+@keyframes gesermasuk {
+    0% {
+        -webkit-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+
+    50% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0vmax);
+    }
+
+    25% {
+        transform: translateX(20vmax);
+    }
+
+    50% {
+        transform: translateX(50vmax);
+    }
+
+    75% {
+        transform: translateX(75vmax);
+    }
+
+    100% {
+        transform: translateX(100vmax);
+    }
+
 }
 
 /* Responsif */
