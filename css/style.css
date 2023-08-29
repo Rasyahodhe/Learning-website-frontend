@@ -373,6 +373,9 @@ h2 {
 }
 
 .container .card span {
+    display: flex;
+    flex-direction: column;
+    gap: 10vmax;
     position: absolute;
     z-index: -999;
     width: 100%;
@@ -389,15 +392,26 @@ h2 {
     animation-iteration-count: infinite;
 }
 
+.container .card span .anim2 {
+    width: 5%;
+    height: 20%;
+    background-color: yellow;
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+}
+
 .container .card .setcard {
     position: relative;
     z-index: 999;
     display: flex;
-    gap: 10vmax;
+    gap: 5vmax;
     margin: auto;
     width: 80%;
     height: 25vmax;
     padding: .7vmax;
+
     justify-content: center;
 }
 
@@ -474,6 +488,33 @@ p {
 
     100% {
         transform: translateX(100vmax);
+    }
+
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateX(100vmax);
+
+
+    }
+
+    25% {
+        transform: translateX(75vmax);
+
+    }
+
+    50% {
+        transform: translateX(50vmax);
+
+    }
+
+    75% {
+        transform: translateX(25vmax);
+    }
+
+    100% {
+        transform: translateX(0vmax);
     }
 
 }
