@@ -125,7 +125,7 @@ span .green {
 .logintampilan .posisi .tombol button {
     font-size: 1vmax;
     padding: .2vmax .5vmax;
-    margin-top: -1.6vmax;
+    margin-top: -1vmax;
 }
 
 
@@ -156,4 +156,9 @@ span .green {
         margin-left: 0%;
     }
 
+}
+
+.logintampilan .tombol button{
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 20%;
 }
