@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 50vmax;
+}
+
+.container .posisi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2vmax;
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    border-radius: 10% 6%;
+    box-shadow: 2vmax 2vmax 2vmax rgba(0, 0, 0, 0.5);
+}
+
+.container .posisi h1 {
+    font-size: 5vmax;
+}
+
+.container .posisi button {
+    width: 5vmax;
+    border-radius: 10% 5%;
+}
+
+.container .posisi button a {
+    font-size: 1.5vmax;
+    text-decoration: none;
+    color: black;
+}

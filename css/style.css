@@ -263,11 +263,13 @@ table {
     display: flex;
     background-color: rgb(251, 255, 0);
     width: 100%;
-    height: 25vmax;
+    height: 27vmax;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: start;
     border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    box-shadow: 1vmax 2vmax 3vmax rgba(0, 0, 0, .5);
 }
 
 /* Menu > Menu Header  */
@@ -381,6 +383,7 @@ h2 {
     width: 100%;
     height: 26vmax;
 }
+
 /* tempat animasinya */
 .container .card span .anim1 {
     width: 5%;
@@ -401,6 +404,7 @@ h2 {
     animation-delay: .5s;
     animation-iteration-count: infinite;
 }
+
 .container .card span .anim3 {
     width: 5%;
     height: 20%;
@@ -410,6 +414,7 @@ h2 {
     animation-delay: 1s;
     animation-iteration-count: infinite;
 }
+
 /* --------------------- */
 .container .card .setcard {
     position: relative;
@@ -432,12 +437,13 @@ h2 {
     width: 40%;
     height: 15vmax;
     border: 1px solid black;
-    background-color: rgb(235, 231, 231);
+    /* background-color: rgb(235, 231, 231); */
     border-radius: 10%;
-   overflow: hidden;
+    overflow: hidden;
 }
-.container .card .setcard li:hover h3{
-    font-size: 4vmax ;
+
+.container .card .setcard li:hover h3 {
+    font-size: 4vmax;
     background-color: black;
     width: 100%;
     text-align: center;
@@ -446,12 +452,13 @@ h2 {
 .container .card .setcard li h3 {
     font-size: 3vmax;
     text-shadow: 3px 4px rgb(251, 255, 0);
-     transition: 1s;
+    transition: 1s;
 }
 
-.container .card .setcard li p{
+.container .card .setcard li p {
     font-size: .8vmax;
 }
+
 .container .card .setcard li h3,
 p {
     padding: 1vmax;
@@ -459,11 +466,12 @@ p {
 }
 
 
-.container footer{
+.container footer {
     width: 100%;
     height: 40%;
     background-color: black;
 }
+
 /* Animasi untuk komponen html */
 @-webkit-keyframes gesermasuk {
     0% {
@@ -502,22 +510,32 @@ p {
 @keyframes anim {
     0% {
         transform: translateX(0vmax);
+        width: 0vmax;
+        height: 0vmax;
     }
 
     25% {
         transform: translateX(20vmax);
+        width: 5vmax;
+        height: 5vmax;
+        border-radius: 50%;
     }
 
     50% {
         transform: translateX(50vmax);
+        width: 10vmax;
+        height: 10vmax;
+        border-radius: 50%;
     }
 
     75% {
         transform: translateX(75vmax);
+        border-radius: 50%;
     }
 
     100% {
         transform: translateX(100vmax);
+        border-radius: 50%;
     }
 
 }
@@ -525,22 +543,24 @@ p {
 @keyframes anim2 {
     0% {
         transform: translateX(100vmax);
-
-
+        border-top-right-radius: 20%;
     }
 
     25% {
         transform: translateX(75vmax);
+        border-bottom-left-radius: 30%;
 
     }
 
     50% {
         transform: translateX(50vmax);
+        border-top-left-radius: 20%;
 
     }
 
     75% {
         transform: translateX(25vmax);
+        border-bottom-left-radius: 40%;
     }
 
     100% {
