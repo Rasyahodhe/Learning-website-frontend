@@ -146,7 +146,7 @@ table {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 1vmax;
+    gap: 5vmax;
     width: 100%;
 }
 
@@ -368,20 +368,20 @@ h2 {
 .container .card {
     position: relative;
     width: 100%;
-    height: 30vmax;
-    border: 1px solid black;
+    height: 40vmax;
+
 }
 
 .container .card span {
     display: flex;
     flex-direction: column;
-    gap: 10vmax;
+    gap: 6vmax;
     position: absolute;
     z-index: -999;
     width: 100%;
     height: 26vmax;
 }
-
+/* tempat animasinya */
 .container .card span .anim1 {
     width: 5%;
     height: 20%;
@@ -401,17 +401,27 @@ h2 {
     animation-delay: .5s;
     animation-iteration-count: infinite;
 }
-
+.container .card span .anim3 {
+    width: 5%;
+    height: 20%;
+    background-color: red;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+/* --------------------- */
 .container .card .setcard {
     position: relative;
     z-index: 999;
     display: flex;
-    gap: 5vmax;
+    column-gap: 9vmax;
+    row-gap: 6vmax;
     margin: auto;
     width: 80%;
     height: 25vmax;
     padding: .7vmax;
-
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -419,21 +429,41 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 15vmax;
     border: 1px solid black;
-
+    background-color: rgb(235, 231, 231);
+    border-radius: 10%;
+   overflow: hidden;
+}
+.container .card .setcard li:hover h3{
+    font-size: 4vmax ;
+    background-color: black;
+    width: 100%;
+    text-align: center;
 }
 
 .container .card .setcard li h3 {
     font-size: 3vmax;
+    text-shadow: 3px 4px rgb(251, 255, 0);
+     transition: 1s;
 }
 
+.container .card .setcard li p{
+    font-size: .8vmax;
+}
 .container .card .setcard li h3,
 p {
     padding: 1vmax;
+    text-align: justify;
 }
 
+
+.container footer{
+    width: 100%;
+    height: 40%;
+    background-color: black;
+}
 /* Animasi untuk komponen html */
 @-webkit-keyframes gesermasuk {
     0% {
