@@ -143,11 +143,13 @@ table {
 
 /* Atur Tampilan */
 
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 5vmax;
     width: 100%;
+
 }
 
 .container .head {
